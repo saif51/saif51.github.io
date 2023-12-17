@@ -24,6 +24,15 @@
             padding: 5px; /* Space around content in each cell */
         }
 
+        .name {
+            text-align: left; /* Align names to the left */
+        }
+
+        .name:before {
+            content: "\2022 "; /* Unicode character for bullet */
+            font-size: larger; /* Make the bullet slightly larger */
+        }
+
         .status-box {
             height: 30px;
             width: 110px;
@@ -56,21 +65,21 @@
     <div class="title">Aerospace Faculties CV List</div>
     <table>
         <tr>
-            <td>name1111111111111</td>
+            <td class="name">name1111111111111</td>
             <td>
                 <div class="status-box cv-box">CV: Not Yet</div>
                 <div class="status-box pic-box">Pic: Received</div>
             </td>
         </tr>
         <tr>
-            <td>name 3</td>
+            <td class="name">name 3</td>
             <td>
                 <div class="status-box cv-box">CV: Not Yet</div>
                 <div class="status-box pic-box">Pic: Received</div>
             </td>
         </tr>
         <tr>
-            <td>name 2222</td>
+            <td class="name">name 2222</td>
             <td>
                 <div class="status-box cv-box">CV: Not Yet</div>
                 <div class="status-box pic-box">Pic: Received</div>
