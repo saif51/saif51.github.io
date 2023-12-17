@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            text-align: center; /* Center align everything in the body */
+        }
+
+        .title {
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .list-container {
+            display: inline-block;
+            text-align: left; /* Align list items to the left */
+            margin-top: 30px;
+        }
+
+        .status-box {
+            height: 60px;
+            width: 80px;
+            display: inline-block;
+            margin-right: 10px;
+            border: 1px solid black;
+            text-align: center;
+            vertical-align: middle;
+            color: white;
+            font-size: 14px;
+        }
+
+        .cv-box {
+            animation: red-blink-animation 1s linear infinite;
+        }
+
+        .pic-box {
+            animation: green-blink-animation 1s linear infinite;
+        }
+
+        @keyframes green-blink-animation {
+            50% { background-color: green; }
+        }
+
+        @keyframes red-blink-animation {
+            50% { background-color: red; }
+        }
+    </style>
+</head>
+<body>
+    <div class="title">Aerospace Faculties CV List</div>
+    <div class="list-container">
+        <ul>
+            <li>
+                <div class="status-box cv-box">
+                    CV<br>Not Yet
+                </div>
+                <div class="status-box pic-box">
+                    Pic<br>Received
+                </div>
+                Name 1
+            </li>
+            <!-- Repeat for each name -->
+        </ul>
+    </div>
+</body>
+</html>
 
