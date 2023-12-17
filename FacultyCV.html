@@ -2,6 +2,22 @@
 <html>
 <head>
     <style>
+        body {
+            text-align: center; /* Center align everything in the body */
+        }
+
+        .title {
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .list-container {
+            display: inline-block;
+            text-align: left; /* Align list items to the left */
+            margin-top: 30px;
+        }
+
         .blinking-box {
             height: 30px;
             width: 80px;
@@ -10,7 +26,7 @@
             border: 1px solid black;
             text-align: center;
             vertical-align: middle;
-            line-height: 30px; /* Align text vertically */
+            line-height: 30px;
             color: white;
             font-size: 14px;
         }
@@ -24,7 +40,7 @@
         }
 
         @keyframes green-blink-animation {
-            10% { background-color: green; }
+            50% { background-color: green; }
         }
 
         @keyframes red-blink-animation {
@@ -33,12 +49,14 @@
     </style>
 </head>
 <body>
-    <ul>
-        <li> Name 1<div class="blinking-box green-blink">Received</div></li>
-        <li> Name 2<div class="blinking-box red-blink">Not yet</div></li>
-        <li> Name 3<div class="blinking-box green-blink">Received</div></li>
-        <!-- Add more names and boxes as needed -->
-    </ul>
+    <div class="title">Aerospace Faculties CV List</div>
+    <div class="list-container">
+        <ul>
+            <li><div class="blinking-box green-blink">Received</div> Name 1</li>
+            <li><div class="blinking-box red-blink">Not yet</div> Name 2</li>
+            <li><div class="blinking-box green-blink">Received</div> Name 3</li>
+            <!-- Add more names and boxes as needed -->
+        </ul>
+    </div>
 </body>
 </html>
-
