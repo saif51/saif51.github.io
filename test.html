@@ -18,10 +18,20 @@
             margin-top: 30px;
         }
 
+        .list-item {
+            display: flex; /* Use flexbox for layout */
+            align-items: center; /* Align items vertically in the center */
+            margin-bottom: 10px; /* Add some space between list items */
+        }
+
+        .name {
+            margin-right: 20px; /* Space between name and boxes */
+            white-space: nowrap; /* Prevent name from wrapping */
+        }
+
         .status-box {
             height: 30px;
             width: 110px; /* Increased width to fit text in one line */
-            display: inline-block;
             margin-right: 10px;
             border: 1px solid black;
             text-align: center;
@@ -36,7 +46,7 @@
         }
 
         .pic-box {
-            animation: green-blink-animation 1s linear infinite;
+            animation: green-blink-animation 3s linear infinite;
         }
 
         @keyframes green-blink-animation {
@@ -52,63 +62,18 @@
     <div class="title">Aerospace Faculties CV List</div>
     <div class="list-container">
         <ul>
-            <li>
-                Dr. Khalid Juhany (Chairman)
+            <li class="list-item">
+                <span class="name">name1111111111111</span>
                 <div class="status-box cv-box">CV: Not Yet</div>
                 <div class="status-box pic-box">Pic: Received</div>
             </li>
-            <li>
-                Dr. Ali M. Al-Bahi  
+            <li class="list-item">
+                <span class="name">name 3</span>
                 <div class="status-box cv-box">CV: Not Yet</div>
                 <div class="status-box pic-box">Pic: Received</div>
             </li>
-            <li>
-                Prof. Abdulrahman Bajodah  
-                <div class="status-box cv-box">CV: Not Yet</div>
-                <div class="status-box pic-box">Pic: Received</div>
-            </li>
-            <li>
-                Prof. Mostefa Bourchak  
-                <div class="status-box cv-box">CV: Not Yet</div>
-                <div class="status-box pic-box">Pic: Received</div>
-            </li>
-            <li>
-                Dr. Ibraheem AlQadi  
-                <div class="status-box cv-box">CV: Not Yet</div>
-                <div class="status-box pic-box">Pic: Received</div>
-            </li>
-                        <li>
-                Prof. Wail Harasani  
-                <div class="status-box cv-box">CV: Not Yet</div>
-                <div class="status-box pic-box">Pic: Received</div>
-            </li>
-            <li>
-                Dr. Amjad Pasha  
-                <div class="status-box cv-box">CV: Not Yet</div>
-                <div class="status-box pic-box">Pic: Received</div>
-            </li>
-            <li>
-                Dr. Akram Mohammad  
-                <div class="status-box cv-box">CV: Not Yet</div>
-                <div class="status-box pic-box">Pic: Received</div>
-            </li>
-            <li>
-                Engr. Seraj Alzhrani  
-                <div class="status-box cv-box">CV: Not Yet</div>
-                <div class="status-box pic-box">Pic: Received</div>
-            </li>
-            <li>
-                Engr. Khalid AlGhamdi  
-                <div class="status-box cv-box">CV: Not Yet</div>
-                <div class="status-box pic-box">Pic: Received</div>
-            </li>
-            <li>
-                Engr. Hussein Almaqady  
-                <div class="status-box cv-box">CV: Not Yet</div>
-                <div class="status-box pic-box">Pic: Received</div>
-            </li>
-            <li>
-                Engr. Saif Atiah  
+            <li class="list-item">
+                <span class="name">name 2222</span>
                 <div class="status-box cv-box">CV: Not Yet</div>
                 <div class="status-box pic-box">Pic: Received</div>
             </li>
