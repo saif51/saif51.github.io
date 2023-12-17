@@ -2,80 +2,49 @@
 <html>
 <head>
     <style>
-        body {
-            text-align: center;
+        .status-box {
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            border: 1px solid black;
+            animation: blinking 1s infinite;
         }
 
-        .title {
-            margin-top: 20px;
-            font-size: 24px;
-            font-weight: bold;
+        .green {
+            background-color: green;
+        }
+
+        @keyframes blinking {
+            50% {
+                opacity: 0;
+            }
         }
 
         table {
-            margin-top: 30px;
+            width: 100%;
             border-collapse: collapse;
-            margin-left: auto;
-            margin-right: auto;
         }
 
         td {
-            vertical-align: middle;
+            border: 1px solid black;
             padding: 5px;
         }
 
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-            margin: 0;
+        .name-column {
+            text-align: left;
         }
-
-        .status-box {
-            height: 30px;
-            width: 110px;
-            display: inline-block;
-            border: 1px solid black;
-            text-align: center;
-            line-height: 30px;
-            color: white;
-            font-size: 14px;
-            margin-right: 5px;
-        }
-
-        .cv-box, .pic-box {
-            visibility: hidden; /* Initially hide all boxes */
-        }
-
-        .red-box {
-            background-color: red;
-            visibility: visible; /* Show red boxes by default */
-        }
-
-        .green-box {
-            background-color: green;
-            /* visibility: visible; Uncomment this line when status changes to green */
-        }
-
     </style>
 </head>
 <body>
-    <div class="title">Aerospace Faculties CV List</div>
     <table>
         <tr>
+            <td class="name-column">Faculty Member 1</td>
             <td>
-                <ul>
-                    <li>name1111111111111</li>
-                </ul>
-            </td>
-            <td>
-                <div class="status-box cv-box red-box">CV: Not Yet</div>
-                <div class="status-box cv-box green-box">CV: Received</div>
-                <div class="status-box pic-box red-box">Pic: Not Yet</div>
-                <div class="status-box pic-box green-box">Pic: Received</div>
+                <div class="status-box"></div> <!-- Change class to 'status-box green' if received -->
+                <div class="status-box"></div> <!-- Change class to 'status-box green' if received -->
             </td>
         </tr>
-        <!-- Repeat for each name -->
-        <!-- ... -->
+        <!-- Repeat for other faculty members -->
     </table>
 </body>
 </html>
