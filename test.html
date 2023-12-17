@@ -12,30 +12,24 @@
             font-weight: bold;
         }
 
-        .list-container {
-            display: inline-block;
-            text-align: left; /* Align list items to the left */
+        table {
             margin-top: 30px;
+            border-collapse: collapse; /* Remove space between table cells */
+            margin-left: auto; /* Center table horizontally */
+            margin-right: auto;
         }
 
-        .list-item {
-            display: flex; /* Use flexbox for layout */
-            align-items: left; /* Align items vertically in the center */
-            margin-bottom: 10px; /* Add some space between list items */
-        }
-
-        .name {
-            margin-right: 20px; /* Space between name and boxes */
-            white-space: nowrap; /* Prevent name from wrapping */
+        td {
+            vertical-align: middle; /* Align content of table cells vertically in the middle */
+            padding: 5px; /* Space around content in each cell */
         }
 
         .status-box {
             height: 30px;
-            width: 110px; /* Increased width to fit text in one line */
-            margin-right: 10px;
+            width: 110px;
+            display: inline-block;
             border: 1px solid black;
             text-align: center;
-            vertical-align: middle;
             line-height: 30px;
             color: white;
             font-size: 14px;
@@ -60,25 +54,29 @@
 </head>
 <body>
     <div class="title">Aerospace Faculties CV List</div>
-    <div class="list-container">
-        <ul>
-            <li class="list-item">
-                <span class="name">name1111111111111</span>
+    <table>
+        <tr>
+            <td>name1111111111111</td>
+            <td>
                 <div class="status-box cv-box">CV: Not Yet</div>
                 <div class="status-box pic-box">Pic: Received</div>
-            </li>
-            <li class="list-item">
-                <span class="name">name 3</span>
+            </td>
+        </tr>
+        <tr>
+            <td>name 3</td>
+            <td>
                 <div class="status-box cv-box">CV: Not Yet</div>
                 <div class="status-box pic-box">Pic: Received</div>
-            </li>
-            <li class="list-item">
-                <span class="name">name 2222</span>
+            </td>
+        </tr>
+        <tr>
+            <td>name 2222</td>
+            <td>
                 <div class="status-box cv-box">CV: Not Yet</div>
                 <div class="status-box pic-box">Pic: Received</div>
-            </li>
-            <!-- Repeat for each name -->
-        </ul>
-    </div>
+            </td>
+        </tr>
+        <!-- Repeat for each name -->
+    </table>
 </body>
 </html>
