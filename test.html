@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Essential for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body {
             text-align: center;
-            font-family: Arial, sans-serif; /* Improves readability on small screens */
+            font-family: Arial, sans-serif;
         }
 
         .title {
@@ -15,8 +15,8 @@
         }
 
         table {
-            width: 100%; /* Make table width responsive */
-            max-width: 600px; /* Maximum width */
+            width: 100%;
+            max-width: 600px;
             margin-top: 30px;
             border-collapse: collapse;
             margin-left: auto;
@@ -44,23 +44,33 @@
             color: white;
             font-size: 14px;
             margin-right: 5px;
+            animation-duration: inherit;
+            animation-name: blink-animation;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
         }
 
         .red-box {
             background-color: red;
+            animation-duration: 1s;
         }
 
         .green-box {
             background-color: green;
+            animation-duration: 3s;
+        }
+
+        @keyframes blink-animation {
+            50% { opacity: 0; }
         }
 
         @media screen and (max-width: 600px) {
             .title {
-                font-size: 20px; /* Smaller font size for smaller screens */
+                font-size: 20px;
             }
 
             .status-box {
-                width: 80px; /* Smaller boxes for smaller screens */
+                width: 80px;
                 font-size: 12px;
             }
         }
@@ -70,15 +80,15 @@
 <body>
     <div class="title">Aerospace Faculties CV List</div>
     <table>
-               <tr>
+        <tr>
             <td>
                 <ul>
                     <li>Faculty Member 1</li>
                 </ul>
             </td>
             <td>
-                <div class="status-box cv-box red-box">CV: Not Yet</div> <!-- Change to green-box if received -->
-                <div class="status-box pic-box green-box">Pic: Received</div> <!-- Change to red-box if not received -->
+                <div class="status-box cv-box red-box">CV: Not Yet</div>
+                <div class="status-box pic-box green-box">Pic: Received</div>
             </td>
         </tr>
         <tr>
