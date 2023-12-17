@@ -3,7 +3,7 @@
 <head>
     <style>
         body {
-            text-align: center; /* Center align everything in the body */
+            text-align: center;
         }
 
         .title {
@@ -14,22 +14,20 @@
 
         table {
             margin-top: 30px;
-            border-collapse: collapse; /* Remove space between table cells */
-            margin-left: auto; /* Center table horizontally */
+            border-collapse: collapse;
+            margin-left: auto;
             margin-right: auto;
         }
 
         td {
-            vertical-align: center; /* Align content of table cells vertically in the middle */
-            padding: 5px; /* Space around content in each cell */
+            vertical-align: middle;
+            padding: 5px;
         }
 
-        .name {
-            text-align: left; /* Align names to the left */
-
         ul {
-            list-style-type: disc; /* Style for bullet points */
-            padding-left: 20px; /* Adjust padding for alignment */
+            list-style-type: disc;
+            padding-left: 20px;
+            margin: 0;
         }
 
         .status-box {
@@ -41,38 +39,23 @@
             line-height: 30px;
             color: white;
             font-size: 14px;
+            margin-right: 5px;
         }
 
-        .cv-box-red {
-            animation: red-blink-animation 1s linear infinite;
+        .cv-box, .pic-box {
+            visibility: hidden; /* Initially hide all boxes */
         }
 
-        .pic-box-red {
-            animation: red-blink-animation 1s linear infinite;
-        }
-            
-        .cv-box-green {
-            animation: green-blink-animation 3s linear infinite;
+        .red-box {
+            background-color: red;
+            visibility: visible; /* Show red boxes by default */
         }
 
-        .pic-box-green {
-            animation: green-blink-animation 3s linear infinite;
-        }
-        @keyframes green-blink-animation {
-            50% { background-color: green; }
-        }        
-        
-        @keyframes green-blink-animation {
-            50% { background-color: green; }
+        .green-box {
+            background-color: green;
+            /* visibility: visible; Uncomment this line when status changes to green */
         }
 
-        @keyframes red-blink-animation {
-            50% { background-color: red; }
-        }
-
-        @keyframes red-blink-animation {
-            50% { background-color: red; }
-        }
     </style>
 </head>
 <body>
@@ -81,136 +64,18 @@
         <tr>
             <td>
                 <ul>
-                    <li>Dr. Khalid Juhany (Chairman)</li>
+                    <li>name1111111111111</li>
                 </ul>
             </td>
             <td>
-                <div class="status-box cv-box-red">CV: Not Yet</div>
-                <div class="status-box pic-box-red">Pic: Not Yet</div>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <ul>
-                    <li>Dr. Ali M. Al-Bahi</li>
-                </ul>
-            </td>
-            <td>
-                <div class="status-box cv-box">CV: Not Yet</div>
-                <div class="status-box pic-box">Pic: Received</div>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <ul>
-                    <li>Prof. Abdulrahman Bajodah</li>
-                </ul>
-            </td>
-            <td>
-                <div class="status-box cv-box">CV: Not Yet</div>
-                <div class="status-box pic-box">Pic: Received</div>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <ul>
-                    <li>Prof. Mostefa Bourchak</li>
-                </ul>
-            </td>
-            <td>
-                <div class="status-box cv-box">CV: Not Yet</div>
-                <div class="status-box pic-box">Pic: Received</div>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <ul>
-                    <li>Dr. Ibraheem AlQadi</li>
-                </ul>
-            </td>
-            <td>
-                <div class="status-box cv-box">CV: Not Yet</div>
-                <div class="status-box pic-box">Pic: Received</div>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <ul>
-                    <li>Prof. Wail Harasani</li>
-                </ul>
-            </td>
-            <td>
-                <div class="status-box cv-box">CV: Not Yet</div>
-                <div class="status-box pic-box">Pic: Received</div>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <ul>
-                    <li>Dr. Amjad Pasha</li>
-                </ul>
-            </td>
-            <td>
-                <div class="status-box cv-box">CV: Not Yet</div>
-                <div class="status-box pic-box">Pic: Received</div>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <ul>
-                    <li>Dr. Akram Mohammad</li>
-                </ul>
-            </td>
-            <td>
-                <div class="status-box cv-box">CV: Not Yet</div>
-                <div class="status-box pic-box">Pic: Received</div>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <ul>
-                    <li>Engr. Seraj Alzhrani</li>
-                </ul>
-            </td>
-            <td>
-                <div class="status-box cv-box">CV: Not Yet</div>
-                <div class="status-box pic-box">Pic: Received</div>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <ul>
-                    <li>ngr. Khalid AlGhamdi</li>
-                </ul>
-            </td>
-            <td>
-                <div class="status-box cv-box">CV: Not Yet</div>
-                <div class="status-box pic-box">Pic: Received</div>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <ul>
-                    <li>Engr. Hussein Almaqady</li>
-                </ul>
-            </td>
-            <td>
-                <div class="status-box cv-box">CV: Not Yet</div>
-                <div class="status-box pic-box">Pic: Received</div>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <ul>
-                    <li>Engr. Saif Atiah</li>
-                </ul>
-            </td>
-            <td>
-                <div class="status-box cv-box">CV: Not Yet</div>
-                <div class="status-box pic-box">Pic: Received</div>
+                <div class="status-box cv-box red-box">CV: Not Yet</div>
+                <div class="status-box cv-box green-box">CV: Received</div>
+                <div class="status-box pic-box red-box">Pic: Not Yet</div>
+                <div class="status-box pic-box green-box">Pic: Received</div>
             </td>
         </tr>
         <!-- Repeat for each name -->
+        <!-- ... -->
     </table>
 </body>
 </html>
