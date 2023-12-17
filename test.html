@@ -19,13 +19,14 @@
         }
 
         .status-box {
-            height: 60px;
-            width: 80px;
+            height: 30px;
+            width: 110px; /* Increased width to fit text in one line */
             display: inline-block;
             margin-right: 10px;
             border: 1px solid black;
             text-align: center;
             vertical-align: middle;
+            line-height: 30px;
             color: white;
             font-size: 14px;
         }
@@ -52,12 +53,8 @@
     <div class="list-container">
         <ul>
             <li>
-                <div class="status-box cv-box">
-                    CV<br>Not Yet
-                </div>
-                <div class="status-box pic-box">
-                    Pic<br>Received
-                </div>
+                <div class="status-box cv-box">CV: Not Yet</div>
+                <div class="status-box pic-box">Pic: Received</div>
                 Name 1
             </li>
             <!-- Repeat for each name -->
@@ -65,4 +62,3 @@
     </div>
 </body>
 </html>
-
